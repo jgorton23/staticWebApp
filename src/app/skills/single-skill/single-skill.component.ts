@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-single-skill',
   templateUrl: './single-skill.component.html',
 })
-export class SkillComponent implements OnInit {
+export class SingleSkillComponent implements OnInit {
 
   @Input()
   level: number | undefined;
