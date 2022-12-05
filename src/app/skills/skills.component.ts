@@ -11,8 +11,8 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.skillsColOne.sort((a,b) => {return a.level - b.level})
-    this.skillsColTwo.sort((a,b) => {return a.level - b.level})
+    this.skillsColOne.sort((a,b) => {return b.level - a.level})
+    this.skillsColTwo.sort((a,b) => {return b.level - a.level})
   }
 
   skillsColOne: skill[] = [

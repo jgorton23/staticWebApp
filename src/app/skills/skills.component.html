@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-12 col-lg-6">
       <app-single-skill
-        *ngFor="let skill of skillsColOne"
+        *ngFor="let skill of skillsColOne.slice(0, 2)"
         [level]="skill.level"
         >{{ skill.skillName }}</app-single-skill
       >
