@@ -7,6 +7,7 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { SingleExperienceComponent } from './experience/single-experience/single-experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SingleSkillComponent } from './skills/single-skill/single-skill.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SingleSkillComponent } from './skills/single-skill/single-skill.compone
     PersonalInfoComponent,
     SingleExperienceComponent,
     SkillsComponent,
-    SingleSkillComponent
+    SingleSkillComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
