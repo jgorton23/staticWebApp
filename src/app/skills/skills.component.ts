@@ -20,7 +20,7 @@ export class SkillsComponent implements OnInit {
     {skillName: "Python", years: 1, level: 4},
     {skillName: "SQL", years: 2, level: 3},
     {skillName: "C/C++", years: 2, level: 4},
-    {skillName: "Docker", years: 1, level: 3},
+    {skillName: "Docker", years: 1, level: 2},
     {skillName: "AWS", years: 1, level: 2},
     {skillName: "TypeScript", years: 3, level: 4},
     {skillName: "Angular", years: 1, level: 4},
