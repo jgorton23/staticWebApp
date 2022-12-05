@@ -11,13 +11,15 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.skillsColOne.sort((a,b) => {return a.level - b.level})
+    this.skillsColTwo.sort((a,b) => {return a.level - b.level})
   }
 
   skillsColOne: skill[] = [
     {skillName: "Java", years: 4, level: 5},
     {skillName: "Git", years: 5, level: 5},
     {skillName: "Python", years: 1, level: 4},
-    {skillName: "SQL", years: 2, level: 4},
+    {skillName: "SQL", years: 2, level: 3},
     {skillName: "C/C++", years: 2, level: 4},
     {skillName: "Docker", years: 1, level: 3},
     {skillName: "AWS Lambda", years: 1, level: 2},
