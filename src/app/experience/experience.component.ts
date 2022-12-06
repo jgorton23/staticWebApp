@@ -25,14 +25,21 @@ export class ExperienceComponent implements OnInit {
       end: new Date("2022-08-19")
     },
     {
-      jobTitle: "Computer Science Teaching Assistant",
+      jobTitle: "Computer Science Teaching Assistant - Java",
       companyName: "Iowa State University",
       description: `While working at Iowa State I helped teach hundreds of students the 
       fundamentals of Object Oriented Programming and basic data structures. I provided 
       assistance when students were writing programming projects in Java and held weekly 
       office hours where I was available to answer any computer science related questions`,
       start: new Date("2021-01-13"),
-      end: new Date("2022-12-15")
+      end: new Date("2022-04-22")
+    },
+    {
+      jobTitle: "Computer Science Teaching Assistant - Python",
+      companyName: "Iowa State University",
+      description: ``,
+      start: new Date("2022-08-24"),
+      end: new Date("2022-12-16")
     }
   ];
 
