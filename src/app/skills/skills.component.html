@@ -3,33 +3,11 @@
     <div class="display-1" style="text-align: center">Skills</div>
   </div>
   <div class="row">
-    <div class="col-12 col-md-6 col-lg-4 mb-0 pb-0">
-      <app-single-skill
-        *ngFor="let skill of skills.slice(0, skills.length / 3 + 1)"
-        [level]="skill.level"
-        >{{ skill.skillName }}</app-single-skill
-      >
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-      <app-single-skill
-        *ngFor="
-          let skill of skills.slice(
-            skills.length / 3 + 1,
-            2 * (skills.length / 3) + 1
-          )
-        "
-        [level]="skill.level"
-        >{{ skill.skillName }}</app-single-skill
-      >
-    </div>
-    <div class="col-12 col-md-6 col-lg-4 mt-0 pt-0">
-      <app-single-skill
-        *ngFor="
-          let skill of skills.slice(2 * (skills.length / 3) + 1, skills.length)
-        "
-        [level]="skill.level"
-        >{{ skill.skillName }}</app-single-skill
-      >
-    </div>
+    <app-single-skill
+      class="col-12 col-md-6 col-lg-4 mb-0 pb-0"
+      *ngFor="let skill of skills"
+      [level]="skill.level"
+      >{{ skill.skillName }}</app-single-skill
+    >
   </div>
 </div>
