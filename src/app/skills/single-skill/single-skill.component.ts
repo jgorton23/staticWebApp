@@ -20,7 +20,6 @@ export class SingleSkillComponent implements OnInit {
   }
 
   onClick(){
-    console.log('test')
     this.showDetails = !this.showDetails;
   }
 }

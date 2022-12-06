@@ -24,7 +24,13 @@
   </div>
   <div class="col-12">
     <div *ngIf="showDetails">
-      <p>{{ skill ? skill.description : "" }}</p>
+      <p>
+        {{
+          skill
+            ? skill.description
+            : "I have been learning this skill for a year."
+        }}
+      </p>
     </div>
   </div>
 </div>
