@@ -1,27 +1,31 @@
 <div
-  class="shadow rounded m-3 me-2 ms-2 mb-1 pt-2 pb-2 d-flex flex-row justify-content-between align-items-center"
+  class="shadow rounded m-3 me-2 ms-2 mb-1 pt-2 pb-2"
   style="padding-left: 5%; padding-right: 5%"
   (click)="onClick()"
 >
-  <div>
-    {{ skill ? skill.skillName : "" }}
-    <!-- <ng-content></ng-content> -->
+  <div class="row">
+    <div class="col-6">
+      {{ skill ? skill.skillName : "" }}
+      <!-- <ng-content></ng-content> -->
+    </div>
+    <div class="col-6 d-flex flex-row justify-content-end align-items-center">
+      <img
+        *ngFor="let _ of [].constructor(skill ? skill.level : 0)"
+        src="../../../assets/goldStar.png"
+        alt="star"
+        style="max-height: 1em; max-width: 2.5em"
+      />
+      <img
+        *ngFor="let _ of [].constructor(skill ? 5 - skill.level : 5)"
+        src="../../../assets/grayStar.png"
+        alt="star"
+        style="max-height: 1em; max-width: 2.5em"
+      />
+    </div>
   </div>
-  <div>
-    <img
-      *ngFor="let _ of [].constructor(skill ? skill.level : 0)"
-      src="../../../assets/goldStar.png"
-      alt="star"
-      style="max-height: 1em; max-width: 2.5em"
-    />
-    <img
-      *ngFor="let _ of [].constructor(skill ? 5 - skill.level : 5)"
-      src="../../../assets/grayStar.png"
-      alt="star"
-      style="max-height: 1em; max-width: 2.5em"
-    />
+  <div class="col-12">
+    <div *ngIf="showDetails">
+      <p>test</p>
+    </div>
   </div>
-</div>
-<div *ngIf="showDetails">
-  <p>test</p>
 </div>
