@@ -11,6 +11,7 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.experiences.sort((a,b)=>{return b.end.getDate()-a.end.getDate()})
   }
 
   experiences: experience[] = [
@@ -32,15 +33,15 @@ export class ExperienceComponent implements OnInit {
       assistance when students were writing programming projects in Java and held weekly 
       office hours where I was available to answer any computer science related questions`,
       start: new Date("2021-01-13"),
-      end: new Date("2022-04-22")
+      end: new Date("2022-12-15")
     },
-    {
-      jobTitle: "Computer Science Teaching Assistant - Python",
-      companyName: "Iowa State University",
-      description: ``,
-      start: new Date("2022-08-24"),
-      end: new Date("2022-12-16")
-    }
+    // {
+    //   jobTitle: "Computer Science Teaching Assistant - Python",
+    //   companyName: "Iowa State University",
+    //   description: ``,
+    //   start: new Date("2022-08-24"),
+    //   end: new Date("2022-12-16")
+    // }
   ];
 
 }
