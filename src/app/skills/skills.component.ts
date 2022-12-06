@@ -15,19 +15,19 @@ export class SkillsComponent implements OnInit {
   }
 
   skills: skill[] = [
-    {skillName: "Java", years: 4, level: 5},
-    {skillName: "Git", years: 5, level: 5},
-    {skillName: "Python", years: 1, level: 4},
-    {skillName: "SQL", years: 2, level: 3},
-    {skillName: "C/C++", years: 2, level: 4},
-    {skillName: "Docker", years: 1, level: 2},
-    {skillName: "AWS", years: 1, level: 2},
-    {skillName: "TypeScript", years: 3, level: 4},
-    {skillName: "Angular", years: 1, level: 4},
-    {skillName: "React Native", years: 1, level: 3},
-    {skillName: "React.js", years: 1, level: 3},
-    {skillName: "CSS", years: 5, level: 3},
-    {skillName: "HTML", years: 5, level: 3},
+    {skillName: "Java", years: 4, level: 5, description: ''},
+    {skillName: "Git", years: 5, level: 5, description: ''},
+    {skillName: "Python", years: 1, level: 4, description: ''},
+    {skillName: "SQL", years: 2, level: 3, description: ''},
+    {skillName: "C/C++", years: 2, level: 4, description: ''},
+    {skillName: "Docker", years: 1, level: 2, description: ''},
+    {skillName: "AWS", years: 1, level: 2, description: ''},
+    {skillName: "TypeScript", years: 3, level: 4, description: ''},
+    {skillName: "Angular", years: 1, level: 4, description: ''},
+    {skillName: "React Native", years: 1, level: 3, description: ''},
+    {skillName: "React.js", years: 1, level: 3, description: ''},
+    {skillName: "CSS", years: 5, level: 3, description: ''},
+    {skillName: "HTML", years: 5, level: 3, description: ''},
   ]
 
 }
