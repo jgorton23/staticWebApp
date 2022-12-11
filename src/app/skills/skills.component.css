@@ -1,0 +1,8 @@
+.item {
+  /* transition: 300ms; */
+  opacity: 0.4;
+}
+
+.op:hover > :not(:hover) {
+  /* opacity: 0.4; */
+}
