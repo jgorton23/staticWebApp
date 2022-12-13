@@ -1,8 +1,7 @@
 .opitem {
-  /* transition: 300ms; */
-  opacity: 0.4;
+  transition: 300ms;
 }
 
 .op:hover > :not(:hover) {
-  /* opacity: 0.4; */
+  opacity: 0.4;
 }
