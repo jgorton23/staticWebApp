@@ -5,3 +5,7 @@
 .op:hover > :not(:hover) {
   opacity: 0.4;
 }
+
+.title {
+  text-align: center;
+}
